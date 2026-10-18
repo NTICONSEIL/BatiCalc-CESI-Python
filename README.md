@@ -1,6 +1,6 @@
 # BatiCalc — Python appliqué au BTP
 
-Projet fil rouge de **16 heures** (4 séances de 4 h) destiné aux étudiants de première année de prépa CESI disposant de notions d'algorithmique.
+Projet fil rouge de **16 heures** (4 séances de 4 h) destiné aux étudiants de première année de prépa disposant de notions d'algorithmique.
 
 ## Contexte
 
