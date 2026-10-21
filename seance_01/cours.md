@@ -236,17 +236,17 @@ Sans parenthèses, `2 * longueur + largeur` donnerait `16`, un résultat incorre
 
 Pour un garage rectangulaire de longueur `L`, largeur `l`, hauteur des murs `h` et épaisseur de dalle `e` :
 
-\[
-P = 2(L+l),\quad S_{sol}=L\times l,\quad S_{murs\ bruts}=P\times h
-\]
+$$
+P = 2(L+l),\quad S_{\text{sol}}=L\times l,\quad S_{\text{murs bruts}}=P\times h
+$$
 
-\[
-S_{porte}=L_{porte}\times h_{porte},\quad S_{murs\ nets}=S_{murs\ bruts}-S_{porte}
-\]
+$$
+S_{\text{porte}}=L_{\text{porte}}\times h_{\text{porte}},\quad S_{\text{murs nets}}=S_{\text{murs bruts}}-S_{\text{porte}}
+$$
 
-\[
-V_{dalle}=S_{sol}\times e
-\]
+$$
+V_{\text{dalle}}=S_{\text{sol}}\times e
+$$
 
 En Python :
 
@@ -281,9 +281,9 @@ print(f"Volume de béton : {volume_beton:.2f} m³")
 
 Un parpaing standard du dossier pédagogique couvre nominalement `0.20 × 0.50 = 0.10 m²` de mur. On majore la quantité théorique de 5 % pour les pertes et découpes.
 
-\[
-N = \left\lceil \frac{S_{murs\ nets}}{0,10}\times 1,05\right\rceil
-\]
+$$
+N = \left\lceil \frac{S_{\text{murs nets}}}{0{,}10}\times 1{,}05\right\rceil
+$$
 
 Le symbole `⌈ ⌉` signifie **arrondir à l'entier supérieur**. On ne peut pas commander une fraction de parpaing.
 
